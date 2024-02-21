@@ -86,5 +86,5 @@ Apartments.Locations = {
             distance = 2.0,
             created = false
         }
-    },
+    }
 }
