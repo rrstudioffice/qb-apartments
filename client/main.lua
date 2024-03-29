@@ -693,7 +693,7 @@ RegisterNetEvent('apartments:client:ChangeOutfit', function()
 end)
 
 RegisterNetEvent('apartments:client:Logout', function()
-    TriggerServerEvent('qb-houses:server:LogoutLocation')
+    TriggerServerEvent('apartments:server:Logout')
 end)
 
 

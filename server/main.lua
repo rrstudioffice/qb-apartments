@@ -28,6 +28,13 @@ end
 
 -- Events
 
+
+RegisterNetEvent('apartments:server:Logout', function()
+    local src = source
+    QBCore.Player.Logout(src)
+    TriggerClientEvent('qb-multicharacter:client:chooseChar', src)
+end)
+
 RegisterNetEvent('qb-apartments:server:SetInsideMeta', function(house, insideId, bool, isVisiting)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
